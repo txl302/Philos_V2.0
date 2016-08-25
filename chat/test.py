@@ -10,7 +10,7 @@ chatbot.train("chatterbot.corpus.english")
 # Get a response to an input statement
 chatbot.get_response("Hello, how are you today?")
 
-response = chatbot.get_response("How are you?")
-
-print response
-
+while True:
+	response  =  chatbot.get_response("How are you?")
+	print response
+	
