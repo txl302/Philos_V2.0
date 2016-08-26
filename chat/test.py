@@ -1,7 +1,7 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-chatbot = ChatBot("Ron Obvious")
+chatbot = ChatBot("Philos")
 chatbot.set_trainer(ChatterBotCorpusTrainer)
 
 # Train based on the english corpus
@@ -11,6 +11,7 @@ chatbot.train("chatterbot.corpus.english")
 chatbot.get_response("Hello, how are you today?")
 
 while True:
-	response  =  chatbot.get_response("How are you?")
+	ask = raw_input()
+	response  =  chatbot.get_response(ask)
 	print response
 	
